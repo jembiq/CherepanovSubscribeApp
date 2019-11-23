@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Subscriber</string>
+    <string name="user_name"></string>
+    <string name="password"></string>
+    <string name="hint_name">name</string>
+    <string name="hint_password">password</string>
+    <string name="type_button">Fill form</string>
+    <string name="subscribe_button">Subscribe</string>
+    <string name="vanishButton">Vanish</string>
+    <string name="outputField"></string>
+</resources>
