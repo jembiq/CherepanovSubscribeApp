@@ -697,6 +697,7 @@ id default_activity_button
 id dimensions
 id direct
 id disableHome
+id eMailField
 id edit_query
 id end
 id expand_activities_button
@@ -737,7 +738,6 @@ id outputField
 id packed
 id parent
 id parentPanel
-id passwordField
 id percent
 id progress_circular
 id progress_horizontal
@@ -884,10 +884,10 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string app_name
+string e_mail
+string hint_e_mail
 string hint_name
-string hint_password
 string outputField
-string password
 string search_menu_title
 string status_bar_notification_info_overflow
 string subscribe_button

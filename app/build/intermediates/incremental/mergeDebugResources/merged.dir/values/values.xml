@@ -376,10 +376,10 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns1:g example="Mail" id="application_name">%s</ns1:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="app_name">Subscriber</string>
+    <string name="e_mail"/>
+    <string name="hint_e_mail">e-mail</string>
     <string name="hint_name">name</string>
-    <string name="hint_password">password</string>
     <string name="outputField"/>
-    <string name="password"/>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="subscribe_button">Subscribe</string>

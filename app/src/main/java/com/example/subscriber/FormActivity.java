@@ -38,32 +38,25 @@ public class FormActivity extends AppCompatActivity {
 
     public void initAndSubscribe() {
         Button subscribeButton = (Button) findViewById(R.id.subscribeButton);
-        final EditText userName = (EditText) findViewById(R.id.nameField);
-        final EditText userPassword = (EditText) findViewById(R.id.passwordField);
         final TextView outputField = (TextView) findViewById(R.id.outputField);
-        String name;
-        String password;
 
-        name = userName.getText().toString();
-        password = userPassword.getText().toString();
+        subscribeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText userName = (EditText) findViewById(R.id.nameField);
+                EditText userMail = (EditText) findViewById(R.id.eMailField);
+                String name = userName.getText().toString();
+                String eMail = userMail.getText().toString();
 
-        if ("" == name | "" == password) {
-            subscribeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+                if (name == "" | eMail == "") {
                     outputField.setText("Fill all fields!");
                 }
-            });
-        }
-        else {
-            subscribeButton.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
+                else {
                     outputField.setText("Subscribed as " + userName.getText() +
-                            " " + userPassword.getText());
+                            " " + userMail.getText());
                 }
-            });
-        }
+            }
+        });
     }
 
     public void showButtons() {
@@ -80,14 +73,14 @@ public class FormActivity extends AppCompatActivity {
 
     public void vanish() {
         Button vanishButton = (Button) findViewById(R.id.vanishButton);
-        final EditText userName = (EditText) findViewById(R.id.nameField);
-        final EditText userPassword = (EditText) findViewById(R.id.passwordField);
+        final TextView userName = (TextView) findViewById(R.id.nameField);
+        final TextView userMail = (TextView) findViewById(R.id.eMailField);
 
         vanishButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 userName.setText("");
-                userPassword.setText("");
+                userMail.setText("");
             }
         });
     }
