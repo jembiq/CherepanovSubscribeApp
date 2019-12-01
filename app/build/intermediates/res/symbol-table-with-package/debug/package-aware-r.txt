@@ -894,6 +894,7 @@ string subscribe_button
 string type_button
 string user_name
 string vanishButton
+string welcome_message
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

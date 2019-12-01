@@ -893,6 +893,7 @@ int string subscribe_button 0x7f0b002e
 int string type_button 0x7f0b002f
 int string user_name 0x7f0b0030
 int string vanishButton 0x7f0b0031
+int string welcome_message 0x7f0b0032
 int style AlertDialog_AppCompat 0x7f0c0000
 int style AlertDialog_AppCompat_Light 0x7f0c0001
 int style Animation_AppCompat_Dialog 0x7f0c0002

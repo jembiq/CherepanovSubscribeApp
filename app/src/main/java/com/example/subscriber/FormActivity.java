@@ -39,22 +39,17 @@ public class FormActivity extends AppCompatActivity {
     public void initAndSubscribe() {
         Button subscribeButton = (Button) findViewById(R.id.subscribeButton);
         final TextView outputField = (TextView) findViewById(R.id.outputField);
+        final EditText userName = (EditText) findViewById(R.id.nameField);
+        final EditText userMail = (EditText) findViewById(R.id.eMailField);
 
         subscribeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                EditText userName = (EditText) findViewById(R.id.nameField);
-                EditText userMail = (EditText) findViewById(R.id.eMailField);
                 String name = userName.getText().toString();
                 String eMail = userMail.getText().toString();
+                String text = getString(R.string.welcome_message, name, eMail);
 
-                if (name == "" | eMail == "") {
-                    outputField.setText("Fill all fields!");
-                }
-                else {
-                    outputField.setText("Subscribed as " + userName.getText() +
-                            " " + userMail.getText());
-                }
+                outputField.setText(text);
             }
         });
     }

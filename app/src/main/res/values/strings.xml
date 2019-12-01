@@ -8,4 +8,5 @@
     <string name="subscribe_button">Subscribe</string>
     <string name="vanishButton">Vanish</string>
     <string name="outputField"></string>
+    <string name="welcome_message">Subscribed as %1$s%n%2$s</string>
 </resources>

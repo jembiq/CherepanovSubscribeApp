@@ -3233,6 +3233,7 @@ public final class R {
     public static final int type_button=0x7f0b002f;
     public static final int user_name=0x7f0b0030;
     public static final int vanishButton=0x7f0b0031;
+    public static final int welcome_message=0x7f0b0032;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0c0000;
